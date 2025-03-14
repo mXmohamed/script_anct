@@ -1,0 +1,17 @@
+
+Les 3 scripts SQL sont générés à partir de l'outil pgmodeler et sont prévus pour PostgreSQL V12.0.
+
+Pour assurer leur fonctionnement, vous devez possèder une base PostgreSQL/PostGIS avec des droits administrateurs.
+	- tutoriels d'installation :
+		- https://postgis.net/install/
+		- https://www.sigterritoires.fr/index.php/debuter-avec-postgrespostgis/
+		- https://www.veremes.com/installation-postgresql-windows
+		
+
+Les scripts sont construits selon ce schéma : 
+- Création du schéma ;
+- Création des tables + commentaires de la table et de ses champs ;
+- Création des listes de valeurs ;
+- Création des contraintes de type clés étrangères (vers tables + vers listes de valeurs);
+- Insertion des valeurs dans les listes de valeurs ;
+- Création des indexes (seuls les indexes sur les clés étrangères sont créés, chaque utilisateur est libre d'ajouter les indexes selon son utilisation de la donnée).
